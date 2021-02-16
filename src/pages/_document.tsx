@@ -1,4 +1,4 @@
-import Document from 'next/document';
+import Document, {Html, Head, Main, NextScript} from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
@@ -26,4 +26,18 @@ export default class MyDocument extends Document {
             sheet.seal();
         }
     }
+
+    render () {
+        return (
+          <Html>
+            <Head>
+            <script data-ad-client="ca-pub-1847359099790218" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            </Head>
+            <body>
+              <Main />
+              <NextScript />
+            </body>
+          </Html>
+        )
+      }
 }
